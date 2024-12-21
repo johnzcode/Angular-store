@@ -74,4 +74,12 @@
       </svg>
     </button>
   </div>
+  <div>
+    @for (product of cart; track $index) {
+      <div>
+        <p>{{ product.title }}</p>
+        <p>{{ product.price }}</p>
+      </div>
+    }
+  </div>
 </div>
