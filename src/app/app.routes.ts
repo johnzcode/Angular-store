@@ -21,11 +21,11 @@ export const routes: Routes = [
         ]
     },    
     {
-        path: 'about',
-        component: AboutComponent
+        path: '404',
+        component: NotFoundComponent
     },
     {
         path: '**',
-        component: NotFoundComponent
+        redirectTo: '/404'
     }
 ];
