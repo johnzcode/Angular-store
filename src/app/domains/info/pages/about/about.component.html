@@ -1,8 +1,10 @@
-<div class="px-10">
-    <h1 class="text-lg font-bold">About</h1>
-    <p class="text-xs"><span highlight>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>Repudiandae tempora perspiciatis nihil odio totam sit cum sed repellendus quis veritatis distinctio eius maiores voluptatem eveniet, ea beatae quae dicta reprehenderit.</p>    
+<div class="container mx-auto">
     <div>
-        <app-wave-audio audioUrl="/assets/audio.mp3" />
+        <h1 class="text-lg font-bold">About</h1>
+        <p class="text-xs"><span highlight>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>Repudiandae tempora perspiciatis nihil odio totam sit cum sed repellendus quis veritatis distinctio eius maiores voluptatem eveniet, ea beatae quae dicta reprehenderit.</p>
+        <div>
+            <app-wave-audio audioUrl="/assets/audio.mp3" />
+        </div>
     </div>
 </div>
 
@@ -10,4 +12,3 @@
     <p class="px-10">Numero de clientes</p>
     <app-counter [duration]="duration()" [msg]="msg()" />
 }
-
